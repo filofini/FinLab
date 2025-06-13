@@ -1,0 +1,9 @@
+/* style.css - minimal overrides for the FinLab website */
+
+/* Light beige body background and default text color */
+body {
+  background-color: #f5f5dc; /* beige */
+  color: #1f2937; /* gray-800 */
+}
+
+/* Placeholder for additional custom styles */
