@@ -1,0 +1,37 @@
+/* style.css - custom styles for the FinLab website */
+
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global body styles: light wood background and Inter font */
+body {
+  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937; /* gray-800 */
+}
+
+/* Reusable box style for semi-transparent sections */
+.section-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 0.5rem; /* rounded */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade up animation used when sections enter the viewport */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
