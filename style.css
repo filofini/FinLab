@@ -1,9 +1,48 @@
-/* style.css - minimal overrides for the FinLab website */
+/* style.css - custom overrides for the FinLab website */
 
-/* Light beige body background and default text color */
-body {
-  background-color: #f5f5dc; /* beige */
-  color: #1f2937; /* gray-800 */
+/* Smooth scrolling between sections */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Placeholder for additional custom styles */
+/* Wood texture background and typography */
+body {
+  background-image: url('https://images.unsplash.com/photo-1475070929565-c985b496cb9a?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #1f2937; /* gray-800 */
+  font-family: 'Inter', 'Work Sans', sans-serif;
+}
+
+/* Generic translucent box used for content sections */
+.translucent-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+/* Fade and slide animation for section reveal */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-slide {
+  animation: fadeSlide 0.8s ease-out both;
+}
+
+/* Transition effect for buttons */
+a.button-transition {
+  transition: transform 0.3s, background-color 0.3s;
+}
+a.button-transition:hover {
+  transform: scale(1.05);
+}
