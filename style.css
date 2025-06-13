@@ -5,9 +5,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Global body styles: light wood background and Inter font */
+/* Global body styles: light wood texture (update URL if needed) and Inter font */
 body {
-  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1350&q=80');
+  background-image: url('https://images.unsplash.com/photo-1598203634571-3f3c05658d26?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
