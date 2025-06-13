@@ -46,3 +46,14 @@ a.button-transition {
 a.button-transition:hover {
   transform: scale(1.05);
 }
+
+/* Accent color for headings and key elements */
+.text-accent {
+  color: #8B5E3C;
+}
+.accent-bg {
+  background-color: #8B5E3C;
+}
+.accent-bg:hover {
+  background-color: #7a5034;
+}

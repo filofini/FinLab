@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinLab - Contatti</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans">
+<body class="font-sans text-gray-800">
     <!-- Header with navigation -->
-    <header class="bg-white bg-opacity-80 backdrop-blur sticky top-0 z-10 shadow-sm">
-        <div class="container mx-auto px-4 py-2 flex items-center">
-            <img src="assets/img/finlab-logo.jpg" alt="FinLab logo" class="h-10 mr-4">
-            <span class="text-xl font-semibold">FinLab</span>
+    <header class="fixed top-0 left-0 w-full bg-white/40 backdrop-blur-lg shadow-sm z-20">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="assets/img/finlab-logo.jpg" alt="FinLab logo" class="h-10 mr-3">
+                <span class="text-xl font-semibold">FinLab</span>
+            </div>
+            <nav class="hidden md:block space-x-4 text-sm">
+                <a href="index.html" class="hover:underline">Home</a>
+                <a href="about.html" class="hover:underline">Chi siamo</a>
+                <a href="services.html" class="hover:underline">Cosa facciamo</a>
+                <a href="contact.html" class="hover:underline">Contatti</a>
+            </nav>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-16">
+        <div class="translucent-box p-8 fade-slide">
         <!-- Contact information -->
-        <h1 class="text-3xl font-semibold mb-6">Contatti</h1>
+        <h1 class="text-accent text-3xl font-semibold mb-6">Contatti</h1>
         <p class="mb-2">Indirizzo: FinLab Srl, Fermignano (PU), Italia</p>
         <p class="mb-2">Email: <a href="mailto:finifil06@gmail.com" class="text-blue-600 hover:underline">finifil06@gmail.com</a></p>
         <p class="mb-6">Telefono: <a href="tel:+390000000000" class="text-blue-600 hover:underline">+39 000 0000000</a></p>
@@ -33,11 +44,12 @@
             <input type="text" name="nome" placeholder="Nome" class="p-2 border rounded" required>
             <input type="email" name="email" placeholder="Email" class="p-2 border rounded" required>
             <textarea name="messaggio" rows="5" placeholder="Messaggio" class="p-2 border rounded" required></textarea>
-            <button type="submit" class="bg-yellow-700 text-white px-4 py-2 rounded hover:bg-yellow-800">Invia</button>
+            <button type="submit" class="accent-bg text-white px-4 py-2 rounded">Invia</button>
         </form>
+        </div>
     </main>
 
-    <footer class="bg-white bg-opacity-80 py-4 text-center">
+    <footer class="bg-white/40 backdrop-blur-lg py-4 text-center fade-slide">
         <p class="text-sm">&copy; 2025 FinLab - Fermignano (PU), Italia</p>
         <nav class="mt-2 space-x-4">
             <a href="index.html" class="hover:underline">Home</a>
