@@ -1,61 +1,38 @@
-# FinLab
-Crea un sito web responsive, moderno e pulito per una piccola azienda italiana chiamata **FinLab**, situata a **Permignano, nelle Marche (Italia)**. L’azienda produce **bancali e casse in legno** su misura per altri business (no privati), destinati al **trasporto merci industriale**.
+# FinLab Website
 
-Il sito deve avere uno stile minimalista e professionale, ispirato al design di aziende come Apple o Tesla, ma con colori, texture o sfondi che **richiamano il legno naturale**. Tutto deve essere semplice, elegante, senza distrazioni, con font leggibili e layout ordinato.
+Questo repository contiene un semplice sito web statico per l'azienda **FinLab**, produttrice di bancali e casse in legno su misura a Permignano (MC).
 
-### 📁 Struttura del sito
+Il sito &egrave; realizzato con [Tailwind CSS](https://tailwindcss.com) tramite CDN e pu&ograve; essere modificato rapidamente lavorando sui file HTML.
 
-#### 1. Homepage (`index.html`)
-- Logo FinLab in alto a sinistra (placeholder se non disponibile)
-- Hero section con:
-  - Titolo: `Soluzioni in legno per il trasporto industriale`
-  - Sottotitolo: `Dal cuore delle Marche, bancali e casse in legno su misura per la logistica aziendale`
-  - Bottone: “Scopri di più” che scrolla alla sezione successiva
-- Sezione video aziendale (usa un placeholder per ora)
-- Sezione con 3 punti di forza:
-  - **Affidabilità artigianale**
-  - **Produzione su misura**
-  - **Solo per aziende**
+## Struttura
 
-#### 2. Chi siamo (`about.html`)
-- Storia di FinLab:
-  > Fondata a Permignano, FinLab è un’azienda familiare con oltre 20 anni di esperienza nella produzione di bancali e casse in legno. Specializzati in soluzioni personalizzate per la logistica, serviamo solo aziende in cerca di qualità, solidità e puntualità.
-- Filosofia aziendale: serietà, precisione, sostenibilità del legno
+- `index.html` – homepage con sezione hero, video aziendale e punti di forza.
+- `about.html` – storia dell'azienda e filosofia.
+- `services.html` – descrizione dei prodotti e della lavorazione.
+- `contact.html` – recapiti e form di contatto.
+- `assets/img/` – immagini (attualmente sono presenti placeholder da sostituire).
+- `assets/video/` – video aziendale (placeholder `placeholder.mp4`).
+- `style.css` – piccole personalizzazioni aggiuntive (body beige e testo scuro).
 
-#### 3. Cosa facciamo (`services.html`)
-- Breve introduzione: “Ogni azienda ha esigenze diverse. FinLab crea bancali e casse in legno su misura, con assi di diverse dimensioni e configurazioni.”
-- Lista prodotti:
-  - Bancali standard e su misura
-  - Casse in legno chiuse o aperte
-  - Imballaggi resistenti per trasporti nazionali e internazionali
-- Nota importante: “Lavoriamo esclusivamente con aziende e operatori del settore logistico e trasporti. Non vendiamo a privati.”
+## Personalizzazione
 
-#### 4. Contatti (`contact.html`)
-- Indirizzo: FinLab Srl, Permignano (MC), Italia
-- Email: `info@finlab.it` (placeholder)
-- Telefono: `+39 000 0000000` (placeholder)
-- Mappa Google (placeholder iframe)
-- Form contatto: nome, email, messaggio
+1. **Logo e immagini**
+   - Sostituisci `assets/img/placeholder.jpg` con il tuo logo e altre immagini. Mantieni lo stesso nome file oppure aggiorna il percorso nei tag `<img>` e nel CSS.
+   - Per cambiare l'immagine di sfondo dell'hero in `index.html`, modifica l'URL nello stile inline del relativo `<section>`.
 
-### 🎨 Design
-- Usa **Tailwind CSS** per uno stile pulito e responsive
-- Colori principali: bianco, beige chiaro, marrone legno (soft, non troppo scuro)
-- Font: sans-serif moderno (es. Inter, Roboto, o SF Pro)
-- Immagini placeholder per ora (dove poi caricheremo quelle reali)
+2. **Video aziendale**
+   - Rimpiazza `assets/video/placeholder.mp4` con il tuo video. Assicurati di mantenere l'estensione `.mp4` o aggiorna il tag `<source>` in `index.html`.
 
-### 📁 File richiesti
-- `index.html`, `about.html`, `services.html`, `contact.html`
-- `/assets/img/` per immagini (placeholder)
-- `/assets/video/` per video aziendale (placeholder)
-- `style.css` solo per override minimi se serve
+3. **Testi**
+   - Tutti i testi si trovano direttamente nei file HTML. Apri il file che ti interessa e modifica il contenuto tra i tag.
 
-### 📝 README.md
-Aggiungi istruzioni su:
-- Dove inserire logo, immagini e video
-- Come modificare i testi
-- Come cambiare contatti
+4. **Contatti**
+   - Aggiorna indirizzo, email e telefono in `contact.html` modificando i rispettivi paragrafi.
+   - L'iframe della mappa pu&ograve; essere sostituito con il codice fornito da Google Maps o da un altro servizio.
 
-Commenta bene tutto il codice HTML e CSS, così da facilitare modifiche future.
+5. **Stile**
+   - `style.css` contiene solo poche regole di base. Puoi ampliarlo aggiungendo nuove classi o utilizzando l'utility `@apply` di Tailwind se hai un processo di build dedicato.
 
-NON includere e-commerce, login o pagamenti.
+## Note
 
+Il sito &egrave; pensato per aziende del settore logistico e **non** include funzionalit&agrave; di e-commerce o autenticazione. Tutto il codice HTML &egrave; commentato per facilitare eventuali modifiche.
