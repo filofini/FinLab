@@ -11,23 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans text-gray-800 dark:text-gray-200">
+<body class="font-sans text-gray-800 dark:text-gray-200 bg-fixed bg-cover bg-center">
     <!-- Header reused on all pages -->
-    <header class="bg-white/40 dark:bg-black/40 backdrop-blur sticky top-0 z-10 shadow-sm">
-        <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+    <header class="fixed top-0 left-0 w-full bg-white/40 dark:bg-black/40 backdrop-blur-lg shadow-sm z-20">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
             <div class="flex items-center">
-                <img src="assets/img/finlab-logo.jpg" alt="FinLab logo" class="h-10 mr-4">
+                <img src="assets/img/finlab-logo.jpg" alt="FinLab logo" class="h-10 mr-3">
                 <span class="text-xl font-semibold">FinLab</span>
             </div>
-            <button id="theme-toggle" class="text-xl"></button>
+            <div class="flex items-center space-x-4">
+                <nav class="hidden md:block space-x-4 text-sm dark:text-gray-200">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <a href="about.html" class="hover:underline">Chi siamo</a>
+                    <a href="services.html" class="hover:underline">Cosa facciamo</a>
+                    <a href="contact.html" class="hover:underline">Contatti</a>
+                </nav>
+                <button id="theme-toggle" class="text-xl"></button>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-16">
-        <!-- About section with history -->
-        <h1 class="text-3xl font-semibold mb-6 dark:text-white">Chi siamo</h1>
-        <p class="mb-4 dark:text-gray-100">Fondata a Fermignano, FinLab &egrave; un&rsquo;azienda familiare fondata nel 2020 che si occupa di produzione di bancali e casse in legno. Specializzati in soluzioni personalizzate per la logistica, serviamo solo aziende in cerca di qualit&agrave;, solidit&agrave; e puntualit&agrave;.</p>
-        <p class="dark:text-gray-100">La nostra filosofia unisce seriet&agrave;, precisione e attenzione alla sostenibilit&agrave; del legno per garantire prodotti affidabili e duraturi.</p>
+    <main class="container mx-auto px-4 pt-28 pb-16">
+        <div class="translucent-box p-8 fade-slide">
+            <!-- About section with history -->
+            <h1 class="text-3xl font-semibold mb-6 dark:text-white">Chi siamo</h1>
+            <p class="mb-4 dark:text-gray-100">Fondata a Fermignano, FinLab &egrave; un&rsquo;azienda familiare fondata nel 2020 che si occupa di produzione di bancali e casse in legno. Specializzati in soluzioni personalizzate per la logistica, serviamo solo aziende in cerca di qualit&agrave;, solidit&agrave; e puntualit&agrave;.</p>
+            <p class="dark:text-gray-100">La nostra filosofia unisce seriet&agrave;, precisione e attenzione alla sostenibilit&agrave; del legno per garantire prodotti affidabili e duraturi.</p>
+        </div>
     </main>
 
     <footer class="bg-white/40 dark:bg-black/40 py-4 text-center">
