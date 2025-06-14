@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper.js CSS for the gallery slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Custom overrides -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,20 +44,30 @@
         </div>
     </section>
 
-    <!-- Video section -->
+    <!-- Galleria immagini -->
     <section id="video" class="container mx-auto px-4 py-16 fade-slide">
         <div class="translucent-box p-6">
-            <h2 class="text-3xl font-semibold text-center mb-8">Video aziendale</h2>
-            <video 
-            autoplay 
-            muted 
-            loop 
-            playsinline 
-            class="w-full rounded"
-        >
-            <source src="assets/img/videofinlab.mp4" type="video/mp4">
-            Il tuo browser non supporta i video HTML5.
-            </video>
+            <h2 class="text-3xl font-semibold text-center mb-8">Galleria immagini</h2>
+            <!-- Swiper slider - shows one image at a time -->
+            <div class="swiper mySwiper max-w-[800px] w-full mx-auto">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery/image1.jpg" alt="Immagine 1" class="w-full rounded shadow-lg">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery/image2.jpg" alt="Immagine 2" class="w-full rounded shadow-lg">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/gallery/image3.jpg" alt="Immagine 3" class="w-full rounded shadow-lg">
+                    </div>
+                </div>
+                <!-- Navigation arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
     </section>
 
@@ -98,5 +110,19 @@
             <a href="contact.html" class="hover:underline">Contatti</a>
         </nav>
     </footer>
+
+    <!-- Swiper.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Slider initialization -->
+    <script>
+        // Basic swiper configuration with navigation and mobile swipe support
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
