@@ -32,7 +32,7 @@ html.dark body {
 
 /* Variante dark della translucent box */
 html.dark .translucent-box {
-  background-color: rgba(0, 0, 0, 0.4); /* bg-black/40 */
+  background-color: rgba(17, 24, 39, 0.5); /* gray-900/50 */
 }
 
 /* Fade and slide animation for section reveal */
