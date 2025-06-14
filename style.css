@@ -15,12 +15,24 @@ body {
   font-family: 'Inter', 'Work Sans', sans-serif;
 }
 
+/* Versione dark: colore testo chiaro */
+html.dark body {
+  color: #e5e7eb; /* gray-200 */
+  background-image: none; /* sfondo uniforme in modalita' scura */
+  background-color: #111827; /* gray-900 */
+}
+
 /* Generic translucent box used for content sections */
 .translucent-box {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4); /* bg-white/40 */
   border-radius: 0.75rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
+}
+
+/* Variante dark della translucent box */
+html.dark .translucent-box {
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black/40 */
 }
 
 /* Fade and slide animation for section reveal */
@@ -57,6 +69,13 @@ a.button-transition:hover {
   width: 2.5rem;
   height: 2.5rem;
   color: #1f2937; /* gray-800 */
+}
+
+/* Versione dark dei pulsanti Swiper */
+html.dark .swiper-button-next,
+html.dark .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.4); /* vetro scuro */
+  color: #e5e7eb; /* gray-200 */
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
