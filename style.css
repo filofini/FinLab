@@ -35,6 +35,11 @@ html.dark .translucent-box {
   background-color: rgba(17, 24, 39, 0.5); /* gray-900/50 */
 }
 
+/* Logo image - keep original colors */
+.logo-img {
+  height: 2.5rem; /* h-10 */
+}
+
 /* Fade and slide animation for section reveal */
 @keyframes fadeSlide {
   0% {
